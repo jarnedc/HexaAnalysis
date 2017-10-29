@@ -118,11 +118,11 @@ TreeProducer_AOD::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetu
     std::sort( trackRef.begin(), trackRef.end(), trackSorter);
 
     ///FIXME: High pt cuts only for testing crab - Avoid large size files
-    if(trackRef.size()==0) return;
-    if(trackRef[0]->pt()<5.) return;
+   // if(trackRef.size()==0) return;
+   // if(trackRef[0]->pt()<5.) return;
 
     for (size_t i = 0; i < trackRef.size(); i++) {
-            if(trackRef[1]->pt()<0.5) return;
+           // if(trackRef[1]->pt()<0.5) return;
 
             _track_purity.push_back(trackRef[i]->highPurity);
             _track_Nhits.push_back(trackRef[i]->numberOfValidHits());

@@ -12,8 +12,16 @@
 #include <TChain.h>
 #include <TFile.h>
 
-// Header file for the classes stored in the TTree if any.
+//Header file for the classes stored in the TTree if any.
 #include <vector>
+#include <TMath.h>
+#include <TH2F.h>
+
+
+//constants
+const Double_t m_proton = 0.9382720813;
+const Double_t m_pi_charged = 0.13957018;
+const Double_t m_lambda = 1.115683;
 
 class HQClass {
 public :
